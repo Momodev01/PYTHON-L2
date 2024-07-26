@@ -1,0 +1,92 @@
+
+# How to learn python?
+"""
+Documentation Python: The official Python documentation is available in French at https://docs.python.org/fr/3/.
+
+Python pour les kids: This is a French book that teaches Python programming to kids. It covers the basics of the language and includes fun projects like creating games and animations. You can purchase the book at https://www.eyrolles.com/Informatique/Livre/python-pour-les-kids-9791021402214.
+
+Programmez en Python: This is a French book that provides a comprehensive introduction to Python programming. It covers topics like data types, control flow, functions, and object-oriented programming. You can purchase the book at https://www.eyrolles.com/Informatique/Livre/programmez-en-python-9782212134592.
+
+OpenClassrooms: OpenClassrooms is an online learning platform that offers a variety of courses in French, including a course on Python programming. The course covers the basics of the language and includes hands-on coding exercises. You can access the course at https://openclassrooms.com/fr/courses/235344-apprenez-a-programmer-avec-python.
+
+Codecademy: Codecademy offers a Python course in French. The course covers the basics of the language and includes hands-on coding exercises. You can access the course at https://www.codecademy.com/learn/learn-python-3-fr.
+
+Coursera: Coursera offers a variety of Python courses in French from top universities and organizations. These courses cover a range of topics, from the basics of Python to more advanced concepts like data analysis and machine learning. You can access the Python courses at https://www.coursera.org/courses?query=python&languages=fr.
+
+Python.org: The Python.org website provides a variety of resources for learning Python in French, including tutorials, documentation, and community forums. You can access the French resources at https://www.python.org/doc/fr/.
+"""
+
+# Declaration de variable
+"""
+On peut déclarer une variable en utilisant  le mot-clé "var", suivi du nom de la variable et d'un signe égal (=). La valeur de cette
+"""
+x = 10                      # declaration d'une variable entiere
+y = "Hello World!"         # declaration d'une variable de type chaîne de caractères
+z = True                    # déclaration d'une variable booléenne
+
+print(x)                     # affichage du contenu de la variable x
+print(y)                     # affichage du contenu de la variable y
+print(z)                     # affichage du contenu de la variable z
+
+
+# Opérateurs arithmétiques
+"""
+Il existe plusieurs opérateurs  arithmétiques en Python : +, -, *, / et %.
+Voici quelques exemples d'utilisation des opérateurs arithmétique.
+"""
+
+a = 5                        # une variable entière
+b = 3                        # une autre variable entière
+c = a + b                    # addition : le résultat est stocké dans la variable c
+d = a - b                    # soustraction : le résultat est stocké dans la variable d
+e = a * b                    # multiplication : le résultat est stocké dans la variable e
+f = a / b                    # division : le résultat est stocké dans la variable f
+g = a % b                    # modulo : le résultat est stocké dans la variable g
+
+print("Addition: ", c)       # Affichage du contenu de la variable c
+print("Soustraction: ", d)   # Affichage du contenu de la variable d
+print("Multiplication: ", e)  # Affichage du contenu de la variable e
+print("Division: ", f)               # Affichage du contenu de la variable f
+print("Modulo: ", g)                       # Affichage du contenu de la variable g      
+
+"""
+La division par défaut renvoie un nombre réel. Pour obtenir un nombre entier on peut utiliser l'opérateur // qui ne garde que l'entier
+La division de deux nombres peut produire un nombre à virgule ou unWhole         number. La division par exemple de 7 par 2
+La fonction input() permet à l'utilisateur d'entrer un nombre qui sera stocké dans une variable.
+Cette fonction peut être utilisée pour obtenir des informations de l'utilisateur.
+"""
+n = int(input("Enter an integer number: "))
+print("You entered the number: ", n)
+
+
+# Ajout d'un élément dans une liste (tableau)
+"""
+Une liste est un tableau ordonné de valeurs qui peuvent être de différents types : nombres, chaînes de caractères.
+Vous pouvez ajouter un élément à cette liste avec l'opérateur += ou append().
+"""
+
+liste1 = [2, 4, 6]            # Une liste contenant
+liste1 += [8]                # ajoute 8 à la fin de la liste
+print("List after adding element at the end: ", liste1)
+
+liste2 = ["apple", "banana"]  # Une autre liste
+liste2.append("orange")     # ajoute orange à la fin de la liste
+print("List after adding element at the end with append(): ", liste2)
+
+
+# Calculer la somme de tous les éléments d'une liste
+somme_des_éléments = sum(liste1)
+print("Sum of elements in list1: ", somme_des_éléments)
+
+# Les :: en python
+"""
+Le signe deux-points (:) est utilisé pour extraire une portion de chaîne de caractères.
+Il peut également servir à définir une portée limitée d'un nom de variable ou de fonction.
+"""
+chaine = "Bonjour tout le monde!"
+print("First five characters: ", chaine[:5])    # Affichage des  5 premiers caractères
+print("Last six characters: ", chaine[-6:])      # Affichage des 6 derniers caractères
+print("All but first two and last three characters: ", chaine[2:-3])   # Affichage de tout sauf les 2 premières et les 3 dernières lettres
+
+
+

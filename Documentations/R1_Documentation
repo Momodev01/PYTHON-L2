@@ -1,0 +1,282 @@
+#   Recherche sur Python
+#   Qu'est ce que Python?
+"""
+ Python est un langage de programmation qui a été créé en 1991 par Guido van Rossum. 
+ Il est principalement utilisé pour le développement d'applications informatique.
+
+"""
+# Pourquoi est-il utilisé ?
+#  Les avantages de Python :
+"""
+    - Facilité d'utilisation, il est facile à apprendre et à utiliser.
+    - Grande communauté, cela signifie qu'il y a beaucoup de personnes partageant leur expérience et leurs connaissances.
+    - Open Source, gratuit et disponible pour tous les utilisateurs.
+    - Robustesse, il peut gérer des tas de données volumineux.
+    - Interactivité, il permet une interaction immédiate avec l'utilisateur.
+    - Polyvalence, il peut être utilisé dans différents domaines (informatique, science, médecine...).
+"""
+
+#     Exemple simple d'un programme écrit en Python :
+
+print("Bonjour")
+nom = input("Quel est votre nom ? ")
+print("Bienvenue", nom)
+
+# Ce programme commence par afficher "Bonjour". Ensuite, il demande au utilisateur de rentrer son nom. Une fois qu'il a fini de rent
+
+# Les deux branches de Python
+"""
+    Il existe deux versions principales de Python :
+        - CPython (le plus couramment utilisé),
+        - PyPy (qui peut offrir des performances supérieures au CPython).
+"""
+
+# Les types de données
+"""
+    On distingue plusieurs types de données en Python :
+        - Numériques (int, float)
+        - Types de chaîne de caractères (str)
+        - Booléens (True ou False)
+        - Listes (list)
+            Une liste est un ensemble ordonné de valeurs mutables.
+        - Tuples (tuple)
+            Un tuple est un ensemble immuable d’objets.
+        - Sets (set)
+            Un set est un ensemble non ordonné et mutable d’objets sans doublons.
+        - Dictionnaires (dict)
+            Un dictionnaire est un ensemble associatif entreclés de paires clé/valeur.
+"""
+
+# Les opérateurs
+"""
+    Voici quelques exemples d'opérateurs en Python :
+        1.      +   additionne                           3 + 4  = 7
+        2.      -   soustrait                            5 - 2  = 3
+        3.      *   multiplie                            6 * 3  = 18
+        4.      /   divise                               9 / 3  = 3.0
+        5.      // division entière                      9 // 3  = 3
+        6.      %   reste de la division                 9 % 3  = 0
+        7.      **  exponentiation (élève à puissance)   2 ** 3  = 8
+        8.      >> déplace les bits vers la droite       7 >> 2  =  1
+        9.      << déplace les bits vers la gauche       7 << 2  =  28
+        10.     == égalité                              3 == 3  = True
+        11.     != inégalité                            3 != 3  = False
+        12.     >  supérieur à                          3 >  2  = True
+        13.     <  inférieur à                          3 <  2  = False
+        14.     >=supérieur ou égal à                   3 >= 2  = True
+        15.     <=inférieur ou égal à                   3 <= 2  = False
+"""
+
+# Les variables
+"""
+    Définition: 
+        Pour définir une variable en Python, il suffit de donner un nom et de lui assigner une valeur.
+        La syntaxe pour déclarer une variable est : type_de_la_variable = valeur_de_la_variable.
+"""
+int = 42
+float = 3.14
+str = "Bonjour le monde !"
+# bool = True / False
+list = [1, 2, 3]
+tuple = (1, 2, 3)
+dict = {"prenom": "Pierre", "nom": "Ducroc"}
+set = {1, 2,  3}
+
+print(type(int))         # <class 'int'>
+print(type(float))       # <class 'float'>
+print(type(str))         # <class 'str'>
+print(type(bool))        # <class 'bool'>
+print(type(list))        # <class 'list'>
+print(type(tuple))       # <class 'tuple'>
+print(type(dict))        # <class 'dict'>
+print(type(set))         # <class 'set'>
+
+# Les structures de contrôle (conditionnelles)
+""" 
+-   if / elif / else: sont des instructions conditionnelles qui permettent d'exécuter certaines parties du code uniquement si certaines conditions
+
+      * if...else:
+        Si l'expression qui suit if est vraie, on exécute le code qui se trouve dans le premier bloc d'instruction.
+        Si la condition est vraie, l'instruction qui suit s'exécute.
+        Sinon, l'instruction suivante se place après l'instruction "else".
+
+      * elif:
+        Permet d'ajouter des conditions supplémentaires si l'une des premières n'est pas remplie.
+
+-   while:
+      Tant que la condition est vraie, l'instruction qui suit s'exécute.
+
+-   for i in range():
+      L'instruction qui suit s'exécute autant de fois qu'il y a d'éléments dans la suite de caractère ou du nombre spécifié par
+      Cette instruction permet de parcourir une séquence (liste, tuple, chaîne de caractère ou nombre entier).
+      Elle définit une boucle qui va aller de 0 à x (début), jusqu'à y (fin) avec z (pas) entre chaque itération.
+      Elle définit une boucle qui va de 0 à x (début), jusqu'à y (fin) avec z (pas) entre chaque itération.
+
+-   break:
+      Permet de sortir immédiatement de la boucle en question.
+
+-   continue:
+      Permet de passer à l'itération suivante sans exécuter les instructions suivantes.
+
+"""
+
+i = 0
+while i <= 5:
+    if i == 3:
+        print("C'est le numéro 3 !")
+        # continue
+    elif i == 4:
+        break
+    print("Je suis dans la boucle et je ne sais pas quoi faire.")
+    i += 1
+
+# Les collections
+"""
+Une collection est un type de données qui peut contenir plusieurs éléments. Il existe deux types de collections :
+    - Les Listes : sont définies par des crochets []. Elles peuvent contenir différents types de données comme int, float ou str
+                 Elles  sont utilisées pour stocker plusieurs valeurs dans un seul élément.
+        Exemple :
+            list = [0,  1, 2, 3,  4, 5, 6,  7, 8, 9]
+
+    - Les Tuples: sont des objets immuables, c'est-à-dire qu'ils ne peuvent être modifiés une fois créés.
+                 Ils sont donc plus rapides mais moins flexibles que les Listes.
+        Exemple:
+            tuple = (0, 'un', 1, 'deux')
+
+    - Les Sets (ensembles): sont des objets qui stockent uniquement des éléments uniques.
+                On peut ajouter ou retirer des éléments, mais ils ne conservent pas l'ordre.
+        Exemple:
+            set = {1,  2, 3, 2,  1}
+
+    - Les Dictionnaires: sont des objets qui stockent des paires clé/valeur.
+                         La clé doit être unique, tandis que la valeur peut être multiple.
+        Exemple:
+            dict = {'prenom': 'Elle', 'nom':'Minerve'}
+
+    - Le slicing: permet de récupérer une partie d'un objet de type list, tuple ou string.
+                 Il se fait comme ceci : [debut:fin:pas]
+        Exemple:
+             liste = [0, 1, 2, 3, 4,  5, 6, 7,  8, 9]
+             print(liste[1:3])     --> [1, 2]
+             print(liste[:3])      --> [0, 1, 2]
+             print(liste[::2])     --> [0, 2, 4, 6, 8]
+    - Listes et dictionnaires en compréhension:
+        Une compréhension est une façon de déclarer une variable en même temps qu'on lui associe une valeur.
+        Elle sert à générer des listes ou des dictionnaires.
+        Syntaxe:
+            x pour x dans y : expression
+        Par exemple:
+            x**2 for x in range(5)
+            donne [0, 1,  4, 9]
+
+    - Les méthodes courantes sur ces types de variables :
+        * add : Ajoute un élément au dictionnaire / Ensemble / Liste.
+              Si c'est une liste on peut utiliser append() ou extend().
+        * remove : Supprime un élément du dictionnaire / Ensemble /Liste.
+                  Pour une liste il faut spécifier le nombre d'élément à supprimer si plusieurs ont le même élément.
+        * update : Met à jour le dictionnaire avec un autre dictionnaire.
+                  Pour un ensemble ou une liste, il ajoute les éléments du second élément si ils n'existent pas déjà.
+                  Pour les ensembles, il n'y a pas de fonction update car les ensembles ne conserve pas l'ordre.
+        * clear : Vide totalement le dictionnaire / Ensemble / Liste.
+        * pop : Retire un élément du dictionnaire / Ensemble / Liste par son index.
+               Si aucun argument n'est fourni, il retire et renvoie le dernier élément.
+        * sort : Tente de trier la liste en place.
+                Attention cela modifie la liste originale !
+        * reverse : Inverse l'ordre de la liste.
+        * keys(), values() and items(): Renvoient les clés, les valeurs ou les couples clé/valeur du dictionnaire.
+                Attention cela modifie également la liste originale !
+
+"""
+
+# Les itérables (boucles)
+"""
+    On peut les classifier en deux catégories : les itérateurs et les générateurs.
+    - Les itérateurs : ils ont une méthode next(), mais pas necessairement hasNext().
+                    Ils ne peuvent pas être reliés ensemble.
+        Les différents itérateurs:
+            * enumerate() : ajoute un  compteur qui incrémente à chaque élement.
+                    Utile pour faire des boucles qui utilisent un indice.
+            * zip() : prend plusieurs séries d'objets et les combine en un seul.
+                    Cela signifie que si vous avez une série de noms et une série d'âge,
+                    vous pouvez faire une boucle sur tout ça en même temps.
+                    zip(*liste_d_objet) va donner [(nom1, age1), (nom2, age2)...].
+            * range() : crée une suite d'entiers.
+                    range(n) crée des entiers allant de 0 à n-1.
+                    range(a, b[,c]) crée des entiers allant de a à b-1 avec une étape de c.
+
+    - Les générateurs : ils ont une méthode hasNext(), qui renvoie True si il a plus de données à donner, False sinon.
+"""
+# La boucle for et while
+"""
+Une boucle for est une construction de base permettant de parcourir une séquence (par exemple une liste).
+Elle exécute une instruction plusieurs fois, en utilisant généralement une variable de contrôle pour savoir quand arrêter.
+Exemple: 
+for i in range(5):                       # Itère sur les entiers de 0 à 4
+    print(i)
+La boucle while est une construction qui permet de répéter une instruction tant qu'une condition est vraie.
+Exemples:
+nbr = 10
+while nbr > 0:                           # Tant que nbr est supérieur à zéro
+    print(nbr)
+    nbr -= 1                             # On décrémente de 1
+
+"""
+
+
+# Les execeptions
+"""
+
+"""
+
+# Les chaînes de caractères
+"""
+    - Affichage:
+    - Longueur:
+    - Concaténation:
+    - Répétition (Multiplication)
+    - Fonctions & Méthodes
+        • Comment les utiliser
+        • Donner quelques exemples
+    - Extraction de sous-chaînes
+
+"""
+
+# Les Fonctions
+"""
+    - Définition
+    - Utilisation
+    - Fonction Lamda
+    - Fonction prenant un nombre variable d'argument (*args)
+    - Fonction prenant un nombre variable de paramètres (**args)
+
+"""
+
+# Les Modules
+"""
+
+"""
+
+# Les Fichiers
+"""
+    - Création
+    - Lecture
+    - Écriture
+
+"""
+
+# Les classes
+"""
+    - Attribut
+    - Constructeur
+    - Méthode d'instance
+    - Méthode de classe
+    - Méthode statique
+
+"""
+
+# Base de données
+"""
+
+"""
+
+# Python 
